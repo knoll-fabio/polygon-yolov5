@@ -13,7 +13,7 @@ from PIL import Image
 from torch.cuda import amp
 
 from utils.datasets import letterbox
-from utils.general import non_max_suppression, make_divisible, scale_coords, increment_path, xyxy2xywh, save_one_box, polygon_non_max_suppression
+from utils.general import non_max_suppression, make_divisible, scale_coords, increment_path, xyxy2xywh, save_one_box, polygon_non_max_suppression, polygon_scale_coords
 from utils.plots import colors, plot_one_box, polygon_plot_one_box, polygon_plot_one_box_PIL
 from utils.torch_utils import time_synchronized
 
