@@ -4,7 +4,7 @@ nl = 3 # number of anchor layers
 na = 3 # number of anchors
 img_size = 640 # image size for training and testing
 
-datacfg = "data/polygon_signs.yaml"
+datacfg = "conf/polygon_signs.yaml"
 modelcfg = "conf/polygon_yolov5s_signs.yaml"
 
 # calculate anchors based on train set
