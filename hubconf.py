@@ -39,7 +39,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
         if pretrained and channels == 3 and classes == 80:
             model = attempt_load(fname, map_location=torch.device('cpu'))  # download/load FP32 model
         else:
-            cfg = list((Path(__file__).parent / 'models').rglob(f'{name}.yaml'))[0]  # model.yaml path
+            cfg = list((Path(__file__).parent / 'poly_models').rglob(f'{name}.yaml'))[0]  # model.yaml path
             model = Model(cfg, channels, classes)  # create model
             if pretrained:
                 ckpt = torch.load(attempt_download(fname), map_location=torch.device('cpu'))  # load
