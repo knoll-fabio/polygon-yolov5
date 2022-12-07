@@ -9,12 +9,12 @@ The modifications compared with Ultralytics/yolov5 and their brief descriptions 
   1. data/polygon_ucas.yaml : Exemplar UCAS-AOD dataset to test the effects of polygon boxes
   2. data/images/UCAS-AOD : For the inference of polygon-yolov5s-ucas.pt
 
-  3. models/common.py :
+  3. yolo_models/common.py :
     <br/> 3.1. class Polygon_NMS : Non-Maximum Suppression (NMS) module for Polygon Boxes
     <br/> 3.2. class Polygon_AutoShape : Polygon Version of Original AutoShape, input-robust polygon model wrapper for passing cv2/np/PIL/torch inputs. Includes preprocessing, inference and Polygon_NMS
     <br/> 3.3. class Polygon_Detections : Polygon detections class for Polygon-YOLOv5 inference results
-  4. models/polygon_yolov5s_ucas.yaml : Configuration file of polygon yolov5s for exemplar UCAS-AOD dataset
-  5. **models/yolo.py :**
+  4. yolo_models/polygon_yolov5s_ucas.yaml : Configuration file of polygon yolov5s for exemplar UCAS-AOD dataset
+  5. **yolo_models/yolo.py :**
     <br/> 5.1. class Polygon_Detect : Detect head for polygon yolov5 models with polygon box prediction
     <br/> 5.2. class Polygon_Model : Polygon yolov5 models with polygon box prediction
     
